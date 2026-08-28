@@ -16,6 +16,30 @@
       rel="stylesheet"
       href="./styles/main.scss"
     />
+    <link
+      rel="preload"
+      href="./images/Background_320.webp"
+      as="image"
+      type="image/webp"
+      media="(max-width: 743px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="./images/Background_744.webp"
+      as="image"
+      type="image/webp"
+      media="(min-width: 744px) and (max-width: 1259px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="./images/Background_1260.webp"
+      as="image"
+      type="image/webp"
+      media="(min-width: 1260px)"
+      fetchpriority="high"
+    />
     <script
       src="scripts/main.js"
       defer
@@ -30,11 +54,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
   </head>
@@ -56,7 +76,7 @@
           <div class="header__actions">
             <button class="header__icon header__icon--phone">
               <img
-                src="/src/images/Phone_320.svg"
+                src="./images/Phone_320.svg"
                 alt="Phone"
               />
             </button>
@@ -84,7 +104,7 @@
 
             <button class="header__icon header__icon--burger">
               <img
-                src="/src/images/Burger_320.svg"
+                src="./images/Burger_320.svg"
                 alt="Burger"
               />
             </button>
@@ -265,20 +285,30 @@
               <div class="exhibition__gallery exhibition__gallery--two">
                 <picture class="exhibition__img--wrapper">
                   <source
-                    srcset="./images/Old_master_1_tablet.svg"
+                    srcset="./images/Old_master_1_tablet.webp"
                     media="(min-width: 744px)"
+                    width="392"
+                    height="186"
                   />
                   <img
-                    src="./images/Old_master_1.svg"
+                    src="./images/Old_master_1.webp"
                     alt="Old Masters 1"
                     class="exhibition__img"
+                    width="130"
+                    height="130"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </picture>
                 <div class="exhibition__img--wrapper">
                   <img
-                    src="./images/Old_master_2.svg"
+                    src="./images/Old_master_2.webp"
                     alt="Old Masters 2"
                     class="exhibition__img"
+                    width="130"
+                    height="130"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>
@@ -292,23 +322,35 @@
               <div class="exhibition__gallery exhibition__gallery--three">
                 <div class="exhibition__img--wrapper">
                   <img
-                    src="./images/Wisdom_1.svg"
+                    src="./images/Wisdom_1.webp"
                     alt="Wisdom 1"
                     class="exhibition__img"
+                    width="88"
+                    height="87"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="exhibition__img--wrapper">
                   <img
-                    src="./images/Wisdom_2.svg"
+                    src="./images/Wisdom_2.webp"
                     alt="Wisdom 2"
                     class="exhibition__img"
+                    width="88"
+                    height="87"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="exhibition__img--wrapper">
                   <img
-                    src="./images/Wisdom_3.svg"
+                    src="./images/Wisdom_3.webp"
                     alt="Wisdom 3"
                     class="exhibition__img"
+                    width="88"
+                    height="87"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>
@@ -322,20 +364,30 @@
               <div class="exhibition__gallery exhibition__gallery--two">
                 <div class="exhibition__img--wrapper">
                   <img
-                    src="./images/Disney_1.svg"
+                    src="./images/Disney_1.webp"
                     alt="Disney 1"
                     class="exhibition__img"
+                    width="130"
+                    height="130"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <picture class="exhibition__img--wrapper">
                   <source
-                    srcset="./images/Disney_2_tablet.svg"
+                    srcset="./images/Disney_2_tablet.webp"
                     media="(min-width: 744px)"
+                    width="392"
+                    height="186"
                   />
                   <img
-                    src="./images/Disney_2.svg"
+                    src="./images/Disney_2.webp"
                     alt="Disney 2"
                     class="exhibition__img"
+                    width="130"
+                    height="129"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </picture>
               </div>
@@ -369,9 +421,13 @@
           <article class="explore__item">
             <div class="explore__image-wrapper">
               <img
-                src="./images/Collection Areas.svg"
+                src="./images/Collection Areas.webp"
                 alt="Collection Areas"
                 class="explore__image"
+                width="280"
+                height="277"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <h3 class="explore__item-title">Collection Areas</h3>
@@ -384,9 +440,13 @@
           <article class="explore__item">
             <div class="explore__image-wrapper">
               <img
-                src="./images/Travel.svg"
+                src="./images/Travel.webp"
                 alt="Travel"
                 class="explore__image"
+                width="280"
+                height="277"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <h3 class="explore__item-title">Travel</h3>
@@ -399,9 +459,13 @@
           <article class="explore__item">
             <div class="explore__image-wrapper">
               <img
-                src="./images/Virtual Group Tours.svg"
+                src="./images/Virtual Group Tours.webp"
                 alt="Virtual Group Tours"
                 class="explore__image"
+                width="280"
+                height="277"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <h3 class="explore__item-title">Virtual group tours</h3>
@@ -511,16 +575,24 @@
         <div class="footer__bottom-image">
           <picture>
             <source
-              srcset="./images/footer_1260.svg"
+              srcset="./images/footer_1260.webp"
               media="(min-width: 1260px)"
+              width="1259"
+              height="359"
             />
             <source
-              srcset="./images/footer_744.svg"
+              srcset="./images/footer_744.webp"
               media="(min-width: 744px)"
+              width="744"
+              height="359"
             />
             <img
-              src="./images/footer.svg"
+              src="./images/footer.webp"
               alt="Exhibition dresses"
+              width="320"
+              height="180"
+              loading="lazy"
+              decoding="async"
             />
           </picture>
         </div>

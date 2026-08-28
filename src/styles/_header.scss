@@ -1,5 +1,5 @@
 .header {
-  background-image: url(../images/Background_320.svg);
+  background-image: url(../images/Background_320.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -8,11 +8,11 @@
   font-family: $font-primary;
 
   @include device(tablet) {
-    background-image: url(../images/Background_744.svg);
+    background-image: url(../images/Background_744.webp);
   }
 
   @include device(desktop) {
-    background-image: url(../images/Background_1260.svg);
+    background-image: url(../images/Background_1260.webp);
   }
 
   &__top {
