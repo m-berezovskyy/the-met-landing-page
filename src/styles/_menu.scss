@@ -23,11 +23,11 @@
     padding: 25px $container-padding-mobile;
 
     @include device(tablet) {
-      padding: 32px $container-padding-tablet;
+      padding: 50px $container-padding-tablet;
     }
 
     @include device(desktop) {
-      padding: 32px $container-padding-desktop;
+      padding: 50px $container-padding-desktop;
     }
   }
 
@@ -45,8 +45,13 @@
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0;
 
     @include icon-size(24px);
+
+    @include device(tablet) {
+      @include icon-size(32px);
+    }
   }
 
   &__list {

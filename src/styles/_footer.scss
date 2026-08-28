@@ -90,6 +90,11 @@
     letter-spacing: 0;
     color: $color-footer-black;
     text-decoration: none;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-accent-main;
+    }
   }
 
   &__address {
@@ -129,6 +134,14 @@
     &::placeholder {
       color: #7e7e83;
       opacity: 1;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      box-shadow: 0 0 0 1000px $color-form inset;
+      caret-color: $color-dark;
+      -webkit-text-fill-color: $color-dark;
     }
 
     &:focus {
